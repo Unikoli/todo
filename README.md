@@ -33,7 +33,7 @@ This is a simple Todo application built with Laravel that implements the Actions
 1. Clone the repository:
 ```
 
-git clone [https://github.com/Unikoli/todo.git]
+git clone [https://github.com/Unikoli/todo.git](https://github.com/Unikoli/todo.git)
 cd todo
 
 ```plaintext
@@ -68,4 +68,49 @@ DB_DATABASE=database/database.sqlite
 ```plaintext
 
 6. Create the SQLite database file:
+```
+
+# For Windows:
+
+type nul > database\database.sqlite
+
+# For macOS/Linux:
+
+touch database/database.sqlite
+
+```plaintext
+
+7. Run migrations:
+```
+
+php artisan migrate
+
+```plaintext
+
+8. Seed the database with sample data:
+```
+
+php artisan db:seed
+
+```plaintext
+
+9. Start the development server:
+```
+
+php artisan serve
+
+```plaintext
+
+10. Visit `http://localhost:8000` in your browser.
+
+## Database Seeding
+
+The application comes with a seeder to populate the database with sample todos:
+
+```bash
+# Run the seeder
+php artisan db:seed
+
+# Or refresh the database and run the seeder
+php artisan migrate:fresh --seed
 ```
