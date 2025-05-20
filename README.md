@@ -52,36 +52,26 @@ git clone https://github.com/Unikoli/todo.git
 cd todo
 Install Dependencies
 
-bash
-Copy
-Edit
+
 composer install
 Set Up Environment File
 
-bash
-Copy
-Edit
+
 cp .env.example .env
 Generate Application Key
 
-bash
-Copy
-Edit
+
 php artisan key:generate
 Configure SQLite Database
 
 Open .env and update the database settings:
 
-env
-Copy
-Edit
+
 DB_CONNECTION=sqlite
 DB_DATABASE=database/database.sqlite
 Create the SQLite Database File
 
-bash
-Copy
-Edit
+
 # For macOS/Linux
 touch database/database.sqlite
 
@@ -89,21 +79,15 @@ touch database/database.sqlite
 type nul > database\database.sqlite
 Run Migrations
 
-bash
-Copy
-Edit
+
 php artisan migrate
 (Optional) Seed with Sample Data
 
-bash
-Copy
-Edit
+
 php artisan db:seed
 Start the Server
 
-bash
-Copy
-Edit
+
 php artisan serve
 Open your browser and visit:
 👉 http://localhost:8000
@@ -111,18 +95,14 @@ Open your browser and visit:
 🌱 Database Seeding
 To populate your database with sample todos:
 
-bash
-Copy
-Edit
+
 # Seed only
 php artisan db:seed
 
 # Or refresh everything and seed
 php artisan migrate:fresh --seed
 📂 Folder Structure Highlight
-bash
-Copy
-Edit
+
 app/
 ├── Actions/         # Business logic organized as Actions
 ├── DTOs/            # Data Transfer Objects
