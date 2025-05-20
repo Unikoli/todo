@@ -1,116 +1,139 @@
-```markdown
-# Laravel Todo Application with Actions Pattern
+# ✅ Laravel Todo App – Powered by the Actions Pattern
 
-This is a simple Todo application built with Laravel that implements the Actions Pattern for business logic. The application allows users to create, read, update, and delete todo items, as well as mark them as complete or incomplete.
+A clean and modern **Todo Application** built with **Laravel**, implementing the **Actions Pattern** to separate business logic. Manage your tasks with ease—create, update, delete, and mark todos as complete or incomplete.
 
-## Features
+---
 
-- Todo item CRUD operations
-- Mark todos as complete/incomplete
-- Filter todos by status (all/active/completed)
-- Due dates for todos with validation
-- Basic validation for todo items
+## 🚀 Features
 
-## Technical Implementation
+- ✏️ Create, Read, Update, and Delete (CRUD) todos
+- ✅ Mark todos as complete/incomplete
+- 📅 Add and validate due dates
+- 🔍 Filter todos: All | Active | Completed
+- 🧪 Feature tests for all actions
+- 💡 Uses Data Transfer Objects (DTOs)
+- 🎯 Clean architecture with Actions Pattern
+- 🧼 Code formatted with Laravel Pint
+- 🔁 Code refactored with PHP Rector
+- 💾 SQLite for lightweight storage
 
-- Actions Pattern for business logic
-- PHP Rector for code refactoring
-- Laravel Pint for code formatting
-- Data Transfer Objects (DTOs) for data handling
-- SQLite database for data storage
-- Feature tests for actions
+---
 
-## Project Setup
+## 🛠️ Tech Stack
 
-### Prerequisites
+- **Laravel 10+**
+- **SQLite**
+- **Actions Pattern**
+- **DTOs**
+- **PHP 8.1+**
+- **Composer**
+- **Laravel Pint**
+- **PHP Rector**
 
-- PHP 8.1 or higher
+---
+
+## ⚙️ Project Setup
+
+### ✅ Prerequisites
+
+- PHP >= 8.1
 - Composer
-- SQLite (or any database of your choice)
+- SQLite installed
+- Git
 
-### Installation
+---
 
-1. Clone the repository:
+### 📥 Installation Guide
 
-
-git clone [https://github.com/Unikoli/todo.git](https://github.com/Unikoli/todo.git)
-cd todo
-
-
-
-2. Install dependencies:
-```
-
-composer install
-
-```plaintext
-
-3. Create a copy of the `.env` file:
-```
-
-cp .env.example .env
-
-```plaintext
-
-4. Generate an application key:
-```
-
-php artisan key:generate
-
-```plaintext
-
-5. Configure the database in `.env`:
-```
-
-DB_CONNECTION=sqlite
-DB_DATABASE=database/database.sqlite
-
-```plaintext
-
-6. Create the SQLite database file:
-```
-
-# For Windows:
-
-type nul > database\database.sqlite
-
-# For macOS/Linux:
-
-touch database/database.sqlite
-
-```plaintext
-
-7. Run migrations:
-```
-
-php artisan migrate
-
-```plaintext
-
-8. Seed the database with sample data:
-```
-
-php artisan db:seed
-
-```plaintext
-
-9. Start the development server:
-```
-
-php artisan serve
-
-```plaintext
-
-10. Visit `http://localhost:8000` in your browser.
-
-## Database Seeding
-
-The application comes with a seeder to populate the database with sample todos:
+1. **Clone the Repository**
 
 ```bash
-# Run the seeder
+git clone https://github.com/Unikoli/todo.git
+cd todo
+Install Dependencies
+
+bash
+Copy
+Edit
+composer install
+Set Up Environment File
+
+bash
+Copy
+Edit
+cp .env.example .env
+Generate Application Key
+
+bash
+Copy
+Edit
+php artisan key:generate
+Configure SQLite Database
+
+Open .env and update the database settings:
+
+env
+Copy
+Edit
+DB_CONNECTION=sqlite
+DB_DATABASE=database/database.sqlite
+Create the SQLite Database File
+
+bash
+Copy
+Edit
+# For macOS/Linux
+touch database/database.sqlite
+
+# For Windows (Command Prompt)
+type nul > database\database.sqlite
+Run Migrations
+
+bash
+Copy
+Edit
+php artisan migrate
+(Optional) Seed with Sample Data
+
+bash
+Copy
+Edit
+php artisan db:seed
+Start the Server
+
+bash
+Copy
+Edit
+php artisan serve
+Open your browser and visit:
+👉 http://localhost:8000
+
+🌱 Database Seeding
+To populate your database with sample todos:
+
+bash
+Copy
+Edit
+# Seed only
 php artisan db:seed
 
-# Or refresh the database and run the seeder
+# Or refresh everything and seed
 php artisan migrate:fresh --seed
-```
+📂 Folder Structure Highlight
+bash
+Copy
+Edit
+app/
+├── Actions/         # Business logic organized as Actions
+├── DTOs/            # Data Transfer Objects
+├── Models/          # Eloquent Models
+├── Http/
+│   └── Controllers/ # Route controllers
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you'd like to change.
+
+📄 License
+This project is open-source under the MIT License.
+
+Happy coding! 💻✨
+— Unik Oli
