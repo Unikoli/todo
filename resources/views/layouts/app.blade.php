@@ -28,7 +28,7 @@
 <body>
     <div class="container py-4">
         <header class="pb-3 mb-4 border-bottom">
-            <h1 class="fs-4">Laravel Todo Application (In-Memory Storage)</h1>
+            <h1 class="fs-4"> Todo Application</h1>
         </header>
 
         @if (session('success'))

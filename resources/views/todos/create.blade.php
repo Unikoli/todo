@@ -20,7 +20,7 @@
                 </div>
                 
                 <div class="mb-3">
-                    <label for="description" class="form-label">Description (Optional)</label>
+                    <label for="description" class="form-label">Description</label>
                     <textarea class="form-control @error('description') is-invalid @enderror" id="description" name="description" rows="3">{{ old('description') }}</textarea>
                     @error('description')
                         <div class="invalid-feedback">{{ $message }}</div>
@@ -28,7 +28,7 @@
                 </div>
                 
                 <div class="mb-3">
-                    <label for="due_date" class="form-label">Due Date (Optional)</label>
+                    <label for="due_date" class="form-label">Due Date </label>
                     <input type="date" class="form-control @error('due_date') is-invalid @enderror" id="due_date" name="due_date" value="{{ old('due_date') }}">
                     @error('due_date')
                         <div class="invalid-feedback">{{ $message }}</div>
