@@ -31,12 +31,12 @@ This is a simple Todo application built with Laravel that implements the Actions
 ### Installation
 
 1. Clone the repository:
-```
+
 
 git clone [https://github.com/Unikoli/todo.git](https://github.com/Unikoli/todo.git)
 cd todo
 
-```plaintext
+
 
 2. Install dependencies:
 ```
